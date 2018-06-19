@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final String secureKey = "znOd1gM5iOYeL03kB9v9aXapJXkwmOQn";
+        final String secureKey = "9P8vdzPP4oL9BeDgko3ti6HGnou59LEB";
 
         // Fill the payment parameters using this java class
         final RequestParameters requestParameters = new RequestParameters();
@@ -27,14 +27,14 @@ public class MainActivity extends AppCompatActivity {
         String merchantTransactionId = Payment.generateMD5ChecksumDirectKit(String.valueOf(System.nanoTime()));
 
         // These are the parameters for the VISA brand payment. For the other ones, please check the documentation.
-        requestParameters.setMemberId("10469");
-        requestParameters.setTerminalId("275");
+        requestParameters.setMemberId("11344");
+        requestParameters.setTerminalId("");
         requestParameters.setMerchantTransactionId(merchantTransactionId);
         requestParameters.setOrderDescription("Testing order");
         requestParameters.setAmount("50.00");
         requestParameters.setTmpl_amount("50.00");
         requestParameters.setCurrency("USD");
-        requestParameters.setToType("pz");
+        requestParameters.setToType("docspartner");
         requestParameters.setCountry("IN");
         requestParameters.setTmpl_currency("USD");
         requestParameters.setStreet("69, Adity Estate");
