@@ -5,11 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import com.paymentz.standard.checkout.Payment;
-import com.paymentz.standard.checkout.model.PaymentBrand;
-import com.paymentz.standard.checkout.model.PaymentMode;
-import com.paymentz.standard.checkout.model.PaymentResult;
-import com.paymentz.standard.checkout.model.RequestParameters;
+import com.pz.standard.checkout.Payment;
+import com.pz.standard.checkout.model.PaymentBrand;
+import com.pz.standard.checkout.model.PaymentMode;
+import com.pz.standard.checkout.model.PaymentResult;
+import com.pz.standard.checkout.model.RequestParameters;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         requestParameters.setPaymentBrand(PaymentBrand.VISA);
         requestParameters.setPaymentMode(PaymentMode.CC);
         requestParameters.setMerchantRedirectUrl("www.merchantredirecturl.com");
-        requestParameters.setHostUrl("https://staging.testurl.com/transaction/PayProcessController");
+        requestParameters.setHostUrl("https://testurl.com/transaction/PayProcessController");
 
         Button btnPayNow = (Button) findViewById(R.id.btn_payNow);
 
